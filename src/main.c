@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
         printf("\t--add,-a <item>\t\t Adds the item to the TODO list.\n");
         printf("\t--remove,-r <index>\t Removes the item at the specified "
                 "index from the TODO list.\n");
-        printf("\t--help,-h\t\t Prins this message.\n");
+        printf("\t--help,-h\t\t Prints this message.\n");
         return 0;  // We return here incase there are any bugs etc.
     }
 
