@@ -1,0 +1,10 @@
+#ifndef TODO_VERSION_H_
+#define TODO_VERSION_H_
+
+#define TODO_VERSION_MAJOR 0
+#define TODO_VERSION_MINOR 1
+#define TODO_VERSION_PATCH 0
+#define TODO_VERSION_SUFFIX "dev"
+#define TODO_VERSION_LABEL "v0.1.0-dev"
+
+#endif  // TODO_VERSION_H_
