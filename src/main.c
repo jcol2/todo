@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     // Handle '--help' here
     if (argc >= 2 && (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h")
             == 0)) {
-        printf("todo %s Copyright (c) Jeremy Collette 2018.\n\n"
+        printf("todo %s Copyright (c) 2018 Jeremy Collette.\n\n"
                 , TODO_VERSION_LABEL);
         printf("todo is a TODO list manager.\n");
         printf("Usage: todo [OPTION]\n\n");
