@@ -33,9 +33,9 @@ int main(int argc, char** argv) {
             == 0)) {
         printf("todo %s Copyright (c) 2018 Jeremy Collette.\n"
                 , TODO_VERSION_LABEL);
-    	printf("This program comes with ABSOLUTELY NO WARRANTY.");
-		printf(" This is free software, and you are welcome to redistribute");
-		printf(" it under certain conditions.\n\n");
+        printf("This program comes with ABSOLUTELY NO WARRANTY.");
+        printf(" This is free software, and you are welcome to redistribute");
+        printf(" it under certain conditions.\n\n");
 
         printf("todo is a simple TODO list utility.\n");
         printf("Usage: todo [OPTION]\n");
@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
         printf("\t--add,-a \"<item>\"\t Adds a TODO item.\n");
         printf("\t--help,-h\t\t Prints this message.\n");
         printf("\t--remove,-r <item no.>\t Removes the TODO item at the "
-				"specified number.\n\n");
+                "specified number.\n\n");
         return 0;  // We return here in case there are any bugs etc.
     }
 
