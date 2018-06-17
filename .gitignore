@@ -1,6 +1,9 @@
 # Binary
 todo
 
+# vim
+*.swp
+
 # Prerequisites
 *.d
 

@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
                 " index.\n\n");
         printf("NOTE: If no options are specified, todo will display the"
                 " current list.\n");
-        return 0;  // We return here incase there are any bugs etc.
+        return 0;  // We return here in case there are any bugs etc.
     }
 
     // Create / load default todo list
