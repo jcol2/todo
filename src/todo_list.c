@@ -121,8 +121,8 @@ void delete_todo_list(todo_list_t* list) {
     free(list);
 }
 
-const char* get_todo(todo_list_t* list, unsigned char index) {
-    if (index >= list->num_todos) {
+const char* get_todo_item(todo_list_t* list, unsigned char index) {
+    if (index < 0 || index >= list->num_todos) {
         return NULL;
     }
     return list->todos[index];
@@ -137,7 +137,7 @@ void print_todo_list(todo_list_t* list) {
     }
 
     for (unsigned char i = 0; i < list->num_todos; ++i) {
-        printf("%d. %s\n", i+1, get_todo(list, i));
+        printf("%d. %s\n", i+1, get_todo_item(list, i));
     }
 }
 
