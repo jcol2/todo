@@ -85,7 +85,7 @@ int main(int argc, char** argv) {
 
         f = fopen(default_todo_path, "rw");
         if (!f) {
-            fprintf(stderr, "error: could not open \"%\"."
+            fprintf(stderr, "error: could not open \"%s\"."
                     , default_todo_path);
             return 4;
         }
