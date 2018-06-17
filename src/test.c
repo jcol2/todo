@@ -39,10 +39,37 @@ void test1() {
     assert(list1->num_todos == 0);
 
     printf("adding todos...\n");
-    add_todo(list1, "Create TODO list");
+    add_todo_item(list1, "Create TODO list");
     assert(list1->num_todos == 1);
-    add_todo(list1, "Print TODO list");
+    add_todo_item(list1, "Print TODO list");
     assert(list1->num_todos == 2);
+    add_todo_item(list1, "????????");
+    assert(list1->num_todos == 3);
+    add_todo_item(list1, "PROFIT!!!!!!");
+    assert(list1->num_todos == 4);
+
+    printf("getting todos...\n");
+    const char* item = get_todo_item(list1, 0);
+    assert(strcmp(item, "Create TODO list") == 0);
+    item = get_todo_item(list1, 1);
+    assert(strcmp(item, "Print TODO list") == 0);
+    item = get_todo_item(list1, 2);
+    assert(strcmp(item, "????????") == 0);
+    item = get_todo_item(list1, 3);
+    assert(strcmp(item, "PROFIT!!!!!!") == 0);
+    item = get_todo_item(list1, -1);
+    assert(item == NULL);
+
+    printf("removing todos...\n");
+    assert(remove_todo_item(list1, 2) == 0);
+    assert(get_todo_item(list1, 3) == NULL);
+    assert(remove_todo_item(list1, 2) == 0);
+    assert(get_todo_item(list1, 2) == NULL);
+    item = get_todo_item(list1, 0);
+    assert(strcmp(item, "Create TODO list") == 0);
+    item = get_todo_item(list1, 1);
+    assert(strcmp(item, "Print TODO list") == 0);
+    item = get_todo_item(list1, 2);
 
     printf("saving to file...\n");
     FILE* f = fopen("test.todo", "wr");
