@@ -39,11 +39,11 @@ int add_todo_item(todo_list_t* list, const char* item) {
         fprintf(stderr, "error: todo list is full.\n");
         return 1;
     }
-    if (strlen(item) > MAX_STR_LENGTH) {
+    if (strlen(item) + 1 > MAX_STR_LENGTH) {  // + 1 is for null terminator
         fprintf(stderr, "error: item is too long.\n");
         return 2;
     }
-    list->todos[list->num_todos] = malloc(sizeof(char) * strlen(item));
+    list->todos[list->num_todos] = malloc(sizeof(char) * (strlen(item) + 1));
     strcpy(list->todos[list->num_todos++], item);
     return 0;
 }
