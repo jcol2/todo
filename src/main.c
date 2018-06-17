@@ -34,10 +34,12 @@ int main(int argc, char** argv) {
         printf("todo is a TODO list manager.\n");
         printf("Usage: todo [OPTION]\n\n");
         printf("Options\n");
-        printf("\t--add,-a \"<item>\"\t Adds the item to the TODO list.\n");
+        printf("\t--add,-a \"<item>\"\t Adds a TODO item.\n");
         printf("\t--help,-h\t\t Prints this message.\n");
-        printf("\t--remove,-r <index>\t Removes the item at the specified "
-                "index from the TODO list.\n");
+        printf("\t--remove,-r <index>\t Removes the TODO item at the specified"
+                " index.\n\n");
+        printf("NOTE: If no options are specified, todo will display the"
+                " current list.\n");
         return 0;  // We return here incase there are any bugs etc.
     }
 

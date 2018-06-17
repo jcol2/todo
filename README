@@ -1,3 +1,4 @@
 todo Copyright (c) Jeremy Collette 2018.
 
-A simple TODO utility written in C.
+A simple TODO utility written in C. Run with the '--help' option for more
+information.
