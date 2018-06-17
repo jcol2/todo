@@ -31,6 +31,9 @@ void compare_lists(todo_list_t* a, todo_list_t* b) {
 }
 
 void test1() {
+#ifdef DEBUG
+    printf("debug build!\n");
+#endif
     printf("todo tests.\n");
 
     printf("creating list...\n");
