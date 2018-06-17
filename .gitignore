@@ -1,3 +1,13 @@
+# Binary
+todo
+test
+
+# todo files
+*.todo
+
+# vim
+*.swp
+
 # Prerequisites
 *.d
 

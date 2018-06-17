@@ -1,0 +1,4 @@
+todo Copyright (c) 2018 Jeremy Collette.
+
+A simple TODO utility written in C. Run with the '--help' option for more
+information.
