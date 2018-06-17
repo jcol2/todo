@@ -1,3 +1,18 @@
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+
 #ifndef TODO_TODOLIST_H_
 #define TODO_TODOLIST_H_
 
@@ -84,4 +99,4 @@ int remove_todo_item(todo_list_t* list, unsigned char index);
 ///
 int save_todo_list(todo_list_t* list, FILE* f);
 
-#endif
+#endif  // TODO_TODOLIST_H_
