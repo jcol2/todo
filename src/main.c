@@ -27,7 +27,6 @@
 #define STR_BUF_SIZE 255
 
 int main(int argc, char** argv) {
-
     // Handle '--help' here
     if (argc >= 2 && (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h")
             == 0)) {
